@@ -3,9 +3,58 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B44D5387-58B4-4116-8D58-0A3FF3A4659D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catlog", "Catlog", "{767BEB69-1D01-4ABC-9F6A-5EBFCA680421}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catlog.Api", "Services\catlog\CatlogApi\Catlog.Api.csproj", "{83318315-5313-462F-90FD-E0A1E194B473}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{D1158AE9-CB98-498B-88DC-BCDF1738DB36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{81FE6A40-87FA-4678-AE0F-07077760F15E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{C88AFAD5-C445-4DBE-9D4D-611787ED6709}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount.Grpc", "Services\Discount\Discount.Grpc\Discount.Grpc.csproj", "{10698CD2-DD4F-4E3B-A6AA-474290E83674}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{27C2C3DD-0547-41FD-9D72-B12306741512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Api", "Services\Ordering\Ordering.Api\Ordering.Api.csproj", "{7C91A82A-9ABA-4AF8-96A2-ECA2EA4DA92A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83318315-5313-462F-90FD-E0A1E194B473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83318315-5313-462F-90FD-E0A1E194B473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83318315-5313-462F-90FD-E0A1E194B473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83318315-5313-462F-90FD-E0A1E194B473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81FE6A40-87FA-4678-AE0F-07077760F15E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81FE6A40-87FA-4678-AE0F-07077760F15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81FE6A40-87FA-4678-AE0F-07077760F15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81FE6A40-87FA-4678-AE0F-07077760F15E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10698CD2-DD4F-4E3B-A6AA-474290E83674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10698CD2-DD4F-4E3B-A6AA-474290E83674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10698CD2-DD4F-4E3B-A6AA-474290E83674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10698CD2-DD4F-4E3B-A6AA-474290E83674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C91A82A-9ABA-4AF8-96A2-ECA2EA4DA92A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C91A82A-9ABA-4AF8-96A2-ECA2EA4DA92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C91A82A-9ABA-4AF8-96A2-ECA2EA4DA92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C91A82A-9ABA-4AF8-96A2-ECA2EA4DA92A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{767BEB69-1D01-4ABC-9F6A-5EBFCA680421} = {B44D5387-58B4-4116-8D58-0A3FF3A4659D}
+		{83318315-5313-462F-90FD-E0A1E194B473} = {767BEB69-1D01-4ABC-9F6A-5EBFCA680421}
+		{81FE6A40-87FA-4678-AE0F-07077760F15E} = {D1158AE9-CB98-498B-88DC-BCDF1738DB36}
+		{C88AFAD5-C445-4DBE-9D4D-611787ED6709} = {B44D5387-58B4-4116-8D58-0A3FF3A4659D}
+		{10698CD2-DD4F-4E3B-A6AA-474290E83674} = {C88AFAD5-C445-4DBE-9D4D-611787ED6709}
+		{27C2C3DD-0547-41FD-9D72-B12306741512} = {B44D5387-58B4-4116-8D58-0A3FF3A4659D}
+		{7C91A82A-9ABA-4AF8-96A2-ECA2EA4DA92A} = {27C2C3DD-0547-41FD-9D72-B12306741512}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FDA17926-7B38-42BE-9980-4F71247716C6}
